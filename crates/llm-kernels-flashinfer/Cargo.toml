@@ -1,0 +1,13 @@
+[package]
+name = "llm-kernels-flashinfer"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+llm-kernels.workspace = true
+candle-core.workspace = true
+thiserror.workspace = true
+
+[build-dependencies]
+cmake = "0.1"
