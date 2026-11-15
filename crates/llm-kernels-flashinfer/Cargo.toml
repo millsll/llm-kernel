@@ -8,6 +8,7 @@ license.workspace = true
 llm-kernels.workspace = true
 candle-core.workspace = true
 thiserror.workspace = true
+half.workspace = true
 
 [build-dependencies]
 cmake = "0.1"

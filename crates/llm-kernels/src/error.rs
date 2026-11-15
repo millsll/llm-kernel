@@ -22,6 +22,9 @@ pub enum KernelError {
     #[error("invalid tensor layout: {0}")]
     InvalidLayout(String),
 
+    #[error("invalid device: {0}")]
+    InvalidDevice(String),
+
     #[error("CUDA error: {0}")]
     Cuda(String),
 
@@ -33,4 +36,7 @@ pub enum KernelError {
 
     #[error("internal kernel error: {0}")]
     Internal(String),
+
+    #[error("Candle error: {0}")]
+    CandleErr(#[from] candle_core::Error),
 }
